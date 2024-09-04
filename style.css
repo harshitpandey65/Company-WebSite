@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero .heading2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.herofooter {
+    margin-top: 20px;
+}
+
+.herofooter a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.herofooter a:hover {
+    text-decoration: underline;
+}
+
+.iconset {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cricle {
+    background-color: #2980b9;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 2px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+    margin-top: 20px;
+}
+
+.about-us h1 {
+    font-size: 40px;
+    color: #1a6f8e;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1a6f8e;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-us p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Jobs Section */
+.second {
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    margin-top: 10px;
+}
+
+.job h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1a6f8e;
+}
+
+.elem {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.elem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.elem h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#1a6f8e
+}
+
+.elem button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.elem button a {
+    color: white;
+    text-decoration: none;
+}
+
+.elem button:hover {
+    background-color: #1a6f8e;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.textabout h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.textabout p {
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+.textabout a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.textabout a:hover {
+    text-decoration: underline;
+}
+
+/* Subscribe Section */
+.subscribe {
+    text-align: center;
+    padding: 30px;
+    background-color: #bdc3c7;
+}
+
+.subscribe h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.subscribe h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerleft h5 {
+    margin: 0;
+}
+
+.footerright a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footerright a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-us p {
+        font-size: 16px;
+    }
+    
+    .elem {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+}

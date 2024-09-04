@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Query Section */
+.query-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.query-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.query-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.query-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.query-form label {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.query-form input, .query-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.query-form input:focus, .query-form textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.query-form button {
+    padding: 12px 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.query-form button:hover {
+    background-color: #1a6f8e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

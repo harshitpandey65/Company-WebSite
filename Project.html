@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">developer.com</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Our Project</h1>
+            <p>Explore the details of our exciting new project and meet the team behind it.</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="project-details">
+            <h2>Project Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum, nisl et interdum sagittis, nisl lacus aliquet velit, eget tempor justo augue non ligula.</p>
+        </section>
+        <section class="team">
+            <h2>Meet the Team</h2>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <h3>Jane Doe</h3>
+                <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member2.jpg" alt="Team Member 2">
+                    <h3>John Smith</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h3>Emily Johnson</h3>
+                    <p>Designer</p>
+                </div>
+            </div>      
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 OurProject. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

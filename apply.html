@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="apply.css">
+    <title>Document</title>
+</head>
+<body>
+        <a href="index.html">Back to home</a>
+        <div class="heading">
+            <h1>Front-to-End</h1>
+        <h1 class="class">Developer Job</h1>
+        </div>
+        <div class="main">
+            <div class="container">
+                <form action="">
+                    <div class="o"><label for="">Full Name of Candidates<br>
+                        <input type="text" name="name" placeholder="enter your name"><br></label> </div>
+                    <div class="o"><label for="">Email of Candidate<br>
+                        <input type="email" name="email" placeholder="unknown@gamail.com"><br></label></div> 
+                    <div class="o"><label for="">Year of Experience in Field</label><br>
+                        <input type="number" max="20" min="1"> <br></div>
+                    <div class="o"><label for="">CV of Candidate</label><br>
+                        <input type="file" name="cv"> <br></div>
+                    <div class="o"><label for="">Resume of Candidate</label> <br>
+                        <input type="file" name="resume"> <br>
+                    </div>
+                    <div class="o">
+                        <label for="">Why you are leaving your last job</label> <br>
+                        <input type="text"><br> <br>
+                        <input type="checkbox"> <a href="">Terms & Conditions</a>
+
+                    </div>                
+                </form>
+                <button><p>Apply</p></button>
+            </div>
+        </div>
+    <script defer src="apply.js">apply.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector('form');
+        const nameField = document.querySelector('input[name="name"]');
+        const emailField = document.querySelector('input[name="email"]');
+        const experienceField = document.querySelector('input[type="number"]');
+        const cvField = document.querySelector('input[name="cv"]');
+        const resumeField = document.querySelector('input[name="resume"]');
+        const reasonField = document.querySelector('input[type="text"]');
+        const termsCheckbox = document.querySelector('input[type="checkbox"]');
+        const submitButton = document.querySelector('button');
+    
+        // Function to validate email
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    
+        // Event listener for form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the form from submitting
+    
+            // Validate name
+            if (nameField.value.trim() === "") {
+                alert("Please enter your full name.");
+                nameField.focus();
+                return;
+            }
+    
+            // Validate email
+            if (!validateEmail(emailField.value)) {
+                alert("Please enter a valid email address.");
+                emailField.focus();
+                return;
+            }
+    
+            // Validate experience
+            if (experienceField.value === "" || experienceField.value <= 0 || experienceField.value > 20) {
+                alert("Please enter a valid number of years of experience (1-20).");
+                experienceField.focus();
+                return;
+            }
+    
+            // Validate CV upload
+            if (cvField.value === "") {
+                alert("Please upload your CV.");
+                cvField.focus();
+                return;
+            }
+    
+            // Validate resume upload
+            if (resumeField.value === "") {
+                alert("Please upload your resume.");
+                resumeField.focus();
+                return;
+            }
+    
+            // Validate reason for leaving last job
+            if (reasonField.value.trim() === "") {
+                alert("Please provide a reason for leaving your last job.");
+                reasonField.focus();
+                return;
+            }
+    
+            // Validate terms and conditions checkbox
+            if (!termsCheckbox.checked) {
+                alert("Please accept the terms and conditions.");
+                termsCheckbox.focus();
+                return;
+            }
+    
+            // If all validations pass
+            alert("Your application has been successfully submitted!");
+            form.submit();  // Submits the form
+        });
+    });
+    </script>
+    <script type="module"></script>
+</body>
+</html>
